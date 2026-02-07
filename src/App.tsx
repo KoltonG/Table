@@ -15,11 +15,11 @@ const rows = [...Array(10)].map((_, i) => ({
 const columns: Columns<typeof rows[number]> = [
   {
     header: "Book Title",
-    value: (r) => r.title
+    dataFn: (r) => r.title
   },
   {
     header: "Book Author",
-    value: (r) => r.author
+    dataFn: (r) => r.author
   }
 ];
 
